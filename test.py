@@ -64,6 +64,10 @@ class Test(unittest.TestCase):
 
         for h in expected_data:
             expected_data[h].sort()
+        # for key in expected_data.keys():
+        #     for l in expected_data[key]:
+        #         if l not in data_to_test[key]:
+        #             print("problem")
 
         self.assertDictEqual(data_to_test ,expected_data, "Error: the content of the file created by   \
                                                            the fucntion - courses_for_lecturers        \
